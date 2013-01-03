@@ -34,7 +34,7 @@ public class TestDDF {
 	  String baseUrl = "http://www.cnn.com";
 	  driver.navigate().to(baseUrl);
 	  driver.manage().window().maximize();
-	  String fileName = "/Users/mrahman53/Documents/workspace/Selenium7/file.xls";
+	  String fileName = "file.xls";
       excelReader(fileName);
   
   }
@@ -50,10 +50,10 @@ public class TestDDF {
 	  numOfCols = sheet.getRow(0).getLastCellNum();
 	  dataList = new String[numOfRows][numOfCols];
 	  
-	  for(int i=0; i<numOfRows; i++){
+	  for(int i=1; i<numOfRows; i++){
 		  
 	       HSSFRow row = sheet.getRow(i);
-		   
+	     //iterate through all the cell
 		  for(int j=0; j<numOfCols; j++){
 			  
 		     HSSFCell cell = row.getCell(j);
@@ -100,15 +100,15 @@ public class TestDDF {
   @Test
   public void f() throws InterruptedException {
 	  
-	 us = dataList[2][1];
+	 us = dataList[2][2];
 	 clickCss(us);
-	 world = dataList[3][1];
+	 world = dataList[3][2];
 	 clickCss(world);
-	 tech = dataList[4][1];
+	 tech = dataList[6][2];
 	 clickCss(tech);
 	 sleep(2);
-	 subTech = dataList[5][1];
-	 driver.findElement(By.xpath(subTech)).click();
+	 //subTech = dataList[5][2];
+	 //driver.findElement(By.xpath(subTech)).click();
 	 
  
   }

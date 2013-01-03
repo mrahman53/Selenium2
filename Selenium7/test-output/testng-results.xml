@@ -1,25 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24000" started-at="2013-01-01T16:00:30Z" finished-at="2013-01-01T16:00:54Z">
+  <suite name="Default suite" duration-ms="44281" started-at="2013-01-01T18:36:25Z" finished-at="2013-01-01T18:37:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24000" started-at="2013-01-01T16:00:30Z" finished-at="2013-01-01T16:00:54Z">
-      <class name="com.pnt.qa.TestAppUsingPOI">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.pnt.qa.TestAppUsingPOI@2353f67e]" name="beforeMethod" is-config="true" duration-ms="10252" started-at="2013-01-01T11:00:30Z" finished-at="2013-01-01T11:00:40Z">
+    <test name="Default test" duration-ms="44281" started-at="2013-01-01T18:36:25Z" finished-at="2013-01-01T18:37:10Z">
+      <class name="com.pnt.TestApp">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.pnt.TestApp@5d5bdc50]" name="beforeMethod" is-config="true" duration-ms="14156" started-at="2013-01-01T13:36:25Z" finished-at="2013-01-01T13:36:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="f()[pri:0, instance:com.pnt.qa.TestAppUsingPOI@2353f67e]" name="f" duration-ms="13145" started-at="2013-01-01T11:00:40Z" finished-at="2013-01-01T11:00:53Z">
+        <test-method status="FAIL" signature="f()[pri:0, instance:com.pnt.TestApp@5d5bdc50]" name="f" duration-ms="30117" started-at="2013-01-01T13:36:39Z" finished-at="2013-01-01T13:37:10Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"css selector","selector":"#nav-us>span"}
+Command duration or timeout: 30.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 21:08:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_34'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 22d746ec-3a39-4bcc-9ee4-be7efc8b5215]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"#nav-us>span"}
+Command duration or timeout: 30.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 21:08:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_34'
+Driver info: driver.version: RemoteWebDriver
+Session ID: 22d746ec-3a39-4bcc-9ee4-be7efc8b5215
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:498)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:345)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:406)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:260)
+	at com.pnt.TestApp.f(TestApp.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1203)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1128)
+	at org.testng.TestNG.run(TestNG.java:1036)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"css selector","selector":"#nav-us>span"}
+Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 21:08:56'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_34'
+Driver info: driver.version: unknown
+	at <anonymous class>.<anonymous method>(file:///C:/Users/Parviz/AppData/Local/Temp/anonymous2195077201991106414webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:5299)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/Parviz/AppData/Local/Temp/anonymous2195077201991106414webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:6607)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/Parviz/AppData/Local/Temp/anonymous2195077201991106414webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:273)
+	at <anonymous class>.<anonymous method>(file:///C:/Users/Parviz/AppData/Local/Temp/anonymous2195077201991106414webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:471)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.pnt.qa.TestAppUsingPOI@2353f67e]" name="afterMethod" is-config="true" duration-ms="587" started-at="2013-01-01T11:00:53Z" finished-at="2013-01-01T11:00:54Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.pnt.TestApp@5d5bdc50]" name="afterMethod" is-config="true" duration-ms="1" started-at="2013-01-01T13:37:10Z" finished-at="2013-01-01T13:37:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.pnt.qa.TestAppUsingPOI -->
+      </class> <!-- com.pnt.TestApp -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
